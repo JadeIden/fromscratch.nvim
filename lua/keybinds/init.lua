@@ -1,8 +1,5 @@
-local builtin = require('telescope.builtin')
-
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
-vim.keymap.set('n', '<leader>s<leader>', ':Telescope lsp_dynamic_workplace_symbols<CR>', { desc = 'Dynamic workplace symbols' })
 vim.keymap.set('n', '<leader>gg', ':Neogit<CR>', { desc = 'Open Neogit' })
 vim.keymap.set('n', '<leader>bb', ':Neotree buffers<CR>', { desc = 'Open neotree [b]uffer menu' })
 vim.keymap.set('n', '<leader>bd', ':bd<CR>', { desc = '[D]elete [buffer]' })
@@ -13,4 +10,3 @@ vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower win
 vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 vim.keymap.set('i', 'jk', '<Esc>')
-
